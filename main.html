@@ -2,88 +2,98 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="google-site-verification: googlec088bb62e6bc284e.html" content="xxxxx">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
   </head>
+
   <body>
+    <!-- NAVBAR -->
     <nav>
-      <div class="logo"><img src="/assests/download.png" alt="" /></div>
+      <div class="logo">
+        <img src="/assests/download.png" alt="logo" />
+      </div>
 
       <ul class="nav-links">
         <li><a href="#">About</a></li>
-        <li><a href="#">Featured</a></li>
+        <li><a href="#">Projects</a></li>
         <li><a href="#">Portfolio</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
+
       <div class="social">
-        <a href="https://x.com/"><i class="fa-brands fa-twitter"></i></a>
-        <a
-          href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fdirect%2Finbox%2F%3Fhl%3Den%26__coig_login%3D1#"
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
-        <a href="https://www.facebook.com/prabesh.prasai.641362"
-          ><i class="fa-brands fa-facebook"></i
-        ></a>
-        <a href="https://github.com/prabeshprasai"
-          ><i class="fa-brands fa-github"></i
-        ></a>
+        <a href="https://github.com/prabeshprasai"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/prabesh.prasai.641362"><i class="fa-brands fa-facebook"></i></a>
       </div>
     </nav>
 
+    <!-- HERO SECTION -->
     <section class="hero">
       <div class="left">
-        <h2>designer</h2>
+        <h1>DESIGNER</h1>
+        <p>Creative UI/UX </p>
       </div>
+
       <div class="middle">
-        <img src="/assests/prabesh photo.jpg" alt="" />
+        <img src="assests/prabesh photo.jpg" alt="profile" />
       </div>
 
       <div class="right">
-        <h2>&lt;coder&gt;</h2>
+        <h1>&lt;CODER/&gt;</h1>
+        <p>Frontend Developer</p>
       </div>
     </section>
 
-    <section class="work1">
-      <h1 class="title">Some of MY Latest Work</h1>
-      <div class="card">
-        <img src="/assests/Capture.JPG" alt="work" />
-        <div class="card-text">
-          <h2>My Figma Design System</h2>
-          <p>Design System</p>
+    <!-- WORK SECTION -->
+    <section class="work-section">
+      <h2 class="title">MY LATEST WORK</h2>
+
+      <div class="cards-container">
+        <!-- CARD 1 -->
+        <div class="card">
+          <img src="/assests/Capture.JPG" alt="" />
+
+          <div class="card-text">
+            <h3>Figma Design</h3>
+            <p>Modern Design System UI</p>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+          <img src="/assests/capture-2.JPG" alt="" />
+
+          <div class="card-text">
+            <h3>Instagram UI</h3>
+            <p>Social Media App Design</p>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card">
+          <img src="/assests/Capture-3.JPG" alt="" />
+
+          <div class="card-text">
+            <h3>YouTube Clone</h3>
+            <p>Frontend Clone Project</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <div class="work2">
-      <div class="card2">
-        <img src="/assests/capture-2.JPG" alt="work2" />
-        <div class="card-text2">
-          <h2>My UI Design</h2>
-          <p>Instagram</p>
-        </div>
-      </div>
-    </div>
-    <div class="work3">
-      <div class="card3">
-        <img src="/assests/Capture-3.JPG" alt="work2" />
-        <div class="card-text2">
-          <h2>Clone Design</h2>
-          <p>This is the clone design of MY Youtube UI</p>
-        </div>
-      </div>
-    </div>
+    <!-- FOOTER -->
     <footer>
-      <!-- Arrow Button -->
+      <!-- TOP BUTTON -->
       <div class="top-btn" onclick="scrollToTop()">
         <i class="fa-solid fa-angle-up"></i>
       </div>
@@ -93,14 +103,14 @@
 
         <div class="footer-links">
           <a href="#">About</a>
-          <a href="#">Learn</a>
-          <a href="#">portfolio</a>
+          <a href="#">Projects</a>
           <a href="#">Blog</a>
           <a href="#">Contact</a>
         </div>
       </div>
     </footer>
 
+    <!-- JS -->
     <script>
       function scrollToTop() {
         window.scrollTo({
